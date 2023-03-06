@@ -12,13 +12,20 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
 
+    <!-- swiper slider cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <!-- Iconscout link cdn  -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <!-- font awesome link  -->
     <script
-      src="https://kit.fontawesome.com/a7d30648ce.js"
+      src="https://kit.fontawesome.com/bced25df86.js"
       crossorigin="anonymous"
     ></script>
 
@@ -49,6 +56,8 @@
           </ul>
         </div>
       </nav>
+
+      <!-- nav 2  -->
       <nav class="nav_menu">
         <a href="#" class="nav_logo"><img src="./photos/Logo.png" alt="" /></a>
         <ul class="menu">
@@ -64,9 +73,9 @@
           <li class="dropdown nav_list">
             <a href="#">Food Menu <i class="uil uil-angle-down"></i></a>
             <ul class="dropdown-nav_menu">
-              <li><a href="#">Coffe</a></li>
-              <li><a href="#">Tea</a></li>
-              <li><a href="#">Burger</a></li>
+              <li><a href="#category_coffee">Coffee</a></li>
+              <li><a href="#category_food">Food</a></li>
+              <li><a href="#category_drinks">Drinks</a></li>
             </ul>
           </li>
           <li class="nav_list">
@@ -84,6 +93,7 @@
       </nav>
     </header>
     <main class="main">
+      <!-- ========= Home part ========== -->
       <section class="home section" id="home">
         <div class="home_container container grid">
           <div class="home_left">
@@ -120,10 +130,11 @@
           </div>
         </div>
       </section>
+      <!-- ================ Quotes for shop (no slider) ========= -->
       <section class="quotes">
-        <div class="quotes_container container">
-          <div class="all_quotes">
-            <div class="quote1 quote">
+        <div class="quotes_container container swiper mySwiper">
+          <div class="all_quotes swiper-wrapper">
+            <div class="quote swiper-slide">
               <h1 class="qt">
                 <i class="fa-solid fa-quote-left top-i"></i>
                 Coffee is a way of stealing time which should by rights belong
@@ -133,20 +144,71 @@
                   style="margin-left: 0 auto"
                 ></i>
               </h1>
+              <div class="quote_icon">
+                <img src="./photos/quoteicon.png" alt="" />
+              </div>
+            </div>
+            <div class="quote swiper-slide">
+              <h1 class="qt">
+                <i class="fa-solid fa-quote-left top-i"></i>
+                Coffee is a way of stealing time which should by rights belong
+                to your older self.
+                <i
+                  class="fa-solid fa-quote-right bottom-i"
+                  style="margin-left: 0 auto"
+                ></i>
+              </h1>
+              <div class="quote_icon">
+                <img src="./photos/quoteicon.png" alt="" />
+              </div>
+            </div>
+            <div class="quote swiper-slide">
+              <h1 class="qt">
+                <i class="fa-solid fa-quote-left top-i"></i>
+                Coffee is a way of stealing time which should by rights belong
+                to your older self.
+                <i
+                  class="fa-solid fa-quote-right bottom-i"
+                  style="margin-left: 0 auto"
+                ></i>
+              </h1>
+              <div class="quote_icon">
+                <img src="./photos/quoteicon.png" alt="" />
+              </div>
+            </div>
+            <div class="quote swiper-slide">
+              <h1 class="qt">
+                <i class="fa-solid fa-quote-left top-i"></i>
+                Coffee is a way of stealing time which should by rights belong
+                to your older self.
+                <i
+                  class="fa-solid fa-quote-right bottom-i"
+                  style="margin-left: 0 auto"
+                ></i>
+              </h1>
+              <div class="quote_icon">
+                <img src="./photos/quoteicon.png" alt="" />
+              </div>
+            </div>
+            <div class="quote swiper-slide">
+              <h1 class="qt">
+                <i class="fa-solid fa-quote-left top-i"></i>
+                Coffee is a way of stealing time which should by rights belong
+                to your older self.
+                <i
+                  class="fa-solid fa-quote-right bottom-i"
+                  style="margin-left: 0 auto"
+                ></i>
+              </h1>
+              <div class="quote_icon">
+                <img src="./photos/quoteicon.png" alt="" />
+              </div>
             </div>
           </div>
-          <div class="quote_icon">
-            <img src="./photos/quoteicon.png" alt="" />
-          </div>
-          <div class="quotes_dot">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
+      <!-- ============== Discount part ===========  -->
       <section class="offer section">
         <div class="offer_container container">
           <div class="all_offer grid">
@@ -174,7 +236,8 @@
           </div>
         </div>
       </section>
-      <section class="about section" id="about">
+      <!-- ===========  About use part ========== -->
+      <!-- <section class="about section" id="about">
         <div class="about_container container">
           <div class="cart_pic grid">
             <div>
@@ -211,8 +274,9 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="coffee section" id="coffee_&_drinks">
+      </section> -->
+      <!-- ====================Popular Coffee part ===============  -->
+      <section class="coffee section" id="coffe_&_drinks">
         <div class="coffee_container container">
           <h1 class="section_title coffee_title">Our Most Popular Coffee</h1>
           <div class="all_coffee_cart grid">
@@ -315,6 +379,7 @@
           </div>
         </div>
       </section>
+      <!-- ===============Food for Foodies ============== -->
       <section class="food section" id="foods">
         <div class="food_container container">
           <div class="heading">
@@ -487,6 +552,266 @@
           </div>
         </div>
       </section>
+      <!-- ============== Category =================  -->
+      <section class="category section" id="category">
+        <div class="category_container container">
+          <h1 class="section_title category_heading">Our Category</h1>
+          <div class="all_category">
+            <div class="category_row">
+              <h4 class="category_name">Coffee</h4>
+              <div class="all_item grid">
+                <div class="single_item_cart coffe_single_cart">
+                  <img src="/ecommerce/photos/pngegg (17) 1.png" alt="" />
+                  <h3>Espresso</h3>
+                  <!-- <div class="lower_cart">
+                  </div> -->
+                </div>
+                <div class="single_item_cart coffe_single_cart">
+                  <img src="/ecommerce/photos/pngegg (17) 1.png" alt="" />
+                  <h3>Latte</h3>
+                  <!-- <div class="lower_cart">
+                  </div> -->
+                </div>
+                <div class="single_item_cart coffe_single_cart">
+                  <img src="/ecommerce/photos/pngegg (17) 1.png" alt="" />
+                  <h3>Capuccinno</h3>
+                </div>
+              </div>
+            </div>
+            <div class="category_row">
+              <h4 class="category_name">Food</h4>
+              <div class="all_item grid">
+                <div class="single_item_cart food_single_cart">
+                  <img src="/ecommerce/photos/pngegg (29).png" alt="" />
+                  <h3>Meat Lovers</h3>
+                  <!-- <div class="lower_cart">
+                  </div> -->
+                </div>
+                <div class="single_item_cart food_single_cart">
+                  <img src="/ecommerce/photos/pngegg (30).png" alt="" />
+                  <h3>Sides</h3>
+                  <!-- <div class="lower_cart">
+                  </div> -->
+                </div>
+                <div class="single_item_cart food_single_cart">
+                  <img src="/ecommerce/photos/pngegg (31) 1.png" alt="" />
+                  <h3>Chicken Items</h3>
+                </div>
+              </div>
+            </div>
+            <div class="category_row">
+              <h4 class="category_name">Drinks</h4>
+              <div class="all_item grid">
+                <div class="single_item_cart drinks_single_cart">
+                  <img src="/ecommerce/photos/pngegg (34) 1.png" alt="" />
+                  <h3>Frozen Lemonade</h3>
+                  <!-- <div class="lower_cart">
+                  </div> -->
+                </div>
+                <div class="single_item_cart drinks_single_cart">
+                  <img src="/ecommerce/photos/pngegg (32) 1.png" alt="" />
+                  <h3>Smoothies</h3>
+                  <!-- <div class="lower_cart">
+                  </div> -->
+                </div>
+                <div class="single_item_cart drinks_single_cart">
+                  <img src="/ecommerce/photos/pngegg (33) 1.png" alt="" />
+                  <h3>Protein Shakes</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video section">
+        <div class="video_container container">
+          <div class="all_video grid">
+            <div class="left_video single_video">
+              <img src="/ecommerce/photos/Rectangle 13.png" alt="" />
+            </div>
+            <div class="mid_video single_video">
+              <img src="/ecommerce/photos/Rectangle 11.png" alt="" />
+            </div>
+            <div class="right_video single_video">
+              <img src="/ecommerce/photos/Rectangle 12.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reservation section">
+        <div class="reservation_container container">
+          <div class="all_chart grid">
+            <div class="left_chart chart">
+              <img src="/ecommerce/photos//Rectangle 14.png" alt="" />
+              <h1 class="chart_heading">Rest, Relax & Revive!</h1>
+              <p class="chart_description">
+                At Vertical people come from all around to rest, relax and
+                revive with good coffee, good company, and great food!
+              </p>
+              <div class="wifi">
+                <img src="/ecommerce/photos/IMAGE.png" alt="" />
+              </div>
+            </div>
+            <div class="left_chart chart">
+              <img src="/ecommerce/photos//Rectangle 15.png" alt="" />
+              <h1 class="chart_heading">Did Someone Say “Coffee”</h1>
+              <p class="chart_description">
+                We offer some of the best locally roasted coffee using
+                “Brazilian Santos” beans. Enjoy Dark, Blonde, Jamaican, Italian
+                & Decaf roasts. Also available are our specialty Lattes,
+                Frappes, Mochas, Cappuccinos, Americanos & more …
+              </p>
+            </div>
+            <div class="left_chart chart">
+              <img src="/ecommerce/photos//Group 153.png" alt="" />
+              <button class="btn reservation_btn">Book Your Table</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="review section">
+        <div class="review_bg">
+          <div class="container">
+            <div class="review_grid grid">
+              <div class="review_quote">
+                <h1 class="section_title review_title">
+                  What Our Customer Say
+                </h1>
+                <h1 class="review_qt">
+                  <div>
+                    <i class="fa-solid fa-quote-left review_top_icon"></i>
+                  </div>
+                  <p class="review_description">
+                    I like the coffee but a little expensive to recommend to
+                    friends. Can buy acceptable equivalent in Waitrose for half
+                    the price
+                  </p>
+                  <i class="fa-solid fa-quote-right review_bottom_icon"></i>
+                </h1>
+                <div class="rating">
+                  <h3 class="client_name">Esther Howard</h3>
+                  <div class="stars">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="rating_bottom">
+                  <div class="verify">
+                    <i class="bx bxs-badge-check"></i>
+                    <p>Verified Customer</p>
+                  </div>
+                  <div class="rating_social">
+                    <i class="bx bxl-facebook-circle"></i>
+                    <i class="bx bxl-twitter"></i>
+                    <i class="bx bxs-envelope"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="review_img">
+                <img src="/ecommerce/photos/pngegg321.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== news =============== -->
+      <section class="news section">
+        <div class="container">
+          <div class="container">
+            <h1 class="section_title">Want to hear coffee news from us?</h1>
+            <div class="search-container">
+              <form>
+                <input
+                  type="email"
+                  placeholder="Your E-Mail Address"
+                  name="email"
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+              <div class="check">
+                <input type="checkbox" />
+                <p>
+                  Please read the Coffee Address Personal data processing policy
+                  <span class="info_link"><a href="">here.</a></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="section footer_bg">
+      <div class="footer_container container grid">
+        <div class="left_footer">
+          <img src="/ecommerce/photos/Logo.png" alt="" />
+          <p class="footer_description">
+            We collect the best quality of ingredients From market. With the
+            best execution we provide our guest fresh & very Delicious Food.
+          </p>
+        </div>
+        <div class="right_footer grid">
+          <div class="col1">
+            <h1 class="col_heading">Company</h1>
+            <p class="col_des">About us</p>
+            <p class="col_des">Community</p>
+            <p class="col_des">Careers</p>
+            <p class="col_des">Privacy Policy</p>
+          </div>
+          <div class="col2">
+            <h1 class="col_heading">Menu</h1>
+            <p class="col_des">Community</p>
+            <p class="col_des">Careers</p>
+            <p class="col_des">Privacy Policy</p>
+          </div>
+          <div class="col3">
+            <h1 class="col_heading">Keep In touch</h1>
+            <p class="col_des">Community</p>
+            <p class="col_des">Careers</p>
+            <p class="col_des">Privacy Policy</p>
+          </div>
+          <div class="col4">
+            <h1 class="col_heading">Reservation</h1>
+            <p class="col_des">
+              Reservations are available for dinner, starting at 3pm each day.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_footer container grid">
+        <div class="bot_footer_left grid">
+          <div class="location">
+            <div class="col">
+              <h1 class="col_heading">Our Location</h1>
+              <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <p class="col_des">About it</p>
+                  <p class="col_des">House# 20, Road# 09 Sector# 11,</p>
+                  <p class="col_des">Dhaka 1230</p>
+                </div>
+              </div>
+              <p class="col_map">
+                <i class="bx bx-world"></i>
+                <a href="">Find Us on map</a>
+              </p>
+            </div>
+          </div>
+          <div class="coffe_bag">
+            <img src="/ecommerce/photos/pngegg (36) 1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
